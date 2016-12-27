@@ -1,0 +1,22 @@
+name: ding
+email: ding@gmail.com
+#??????
+content: "name: ${name}, email: ${email}"
+
+
+#????? studentProperties
+student:
+  name: zhong
+  email: zhong@gmail.com
+
+
+#server:
+#  port: 8080
+#  context-path: /kyee
+
+
+#mvn install
+#java -jar *.jar --spring.profiles.active=prod
+spring:
+  profiles:
+    active: dev
