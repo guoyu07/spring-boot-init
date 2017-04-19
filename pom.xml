@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.kyee</groupId>
-	<artifactId>girl</artifactId>
+	<artifactId>spring-boot-init</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>girl</name>
+	<name>spring-boot-init</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -53,12 +53,16 @@
 
 
 
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--用于多线程的测试-->
+        <dependency>
+            <groupId>net.sourceforge.groboutils</groupId>
+            <artifactId>groboutils-core</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
