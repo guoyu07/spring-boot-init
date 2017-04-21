@@ -52,17 +52,18 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>edu.uci.ics</groupId>
+			<artifactId>crawler4j</artifactId>
+			<version>4.3</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--用于多线程的测试-->
-        <dependency>
-            <groupId>net.sourceforge.groboutils</groupId>
-            <artifactId>groboutils-core</artifactId>
-        </dependency>
 	</dependencies>
 
 	<build>
