@@ -10,14 +10,19 @@ student:
   email: zhong@gmail.com
 
 
-#server:
-#  port: 8080
+server:
+  port: 8080
 #  context-path: /kyee
 
 
 #mvn install
 #java -jar *.jar --spring.profiles.active=prod
 spring:
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    mode: HTML5
+
   profiles:
     active: dev
   redis: # REDIS (RedisProperties)
@@ -31,9 +36,9 @@ spring:
       max-idle: 8 # 连接池中的最大空闲连接
       min-idle: 0 # 连接池中的最小空闲连接
     timeout: 0 # 连接超时时间（毫秒）
-  data:
-    mongodb: #MONGODB
-      host: localhost
-      port: 27017
-      database: test
+#  data:
+#    mongodb: #MONGODB
+#      host: localhost
+#      port: 27017
+#      database: test
 
