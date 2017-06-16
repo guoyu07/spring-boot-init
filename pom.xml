@@ -6,7 +6,11 @@
 	<groupId>com.kyee</groupId>
 	<artifactId>spring-boot-init</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <modules>
+        <module>eurake-server</module>
+        <module>ms-course</module>
+    </modules>
+    <packaging>pom</packaging>
 
 	<name>spring-boot-init</name>
 	<description>Demo project for Spring Boot</description>
@@ -23,6 +27,18 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Brixton.SR5</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 	<dependencies>
 		<dependency>
@@ -63,29 +79,29 @@
 			<artifactId>spring-boot-starter-redis</artifactId>
 		</dependency>
 
-		<dependency><!--mongodb, 它的实现依赖spring-data-mongodb-->
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
+		<!--<dependency>&lt;!&ndash;mongodb, 它的实现依赖spring-data-mongodb&ndash;&gt;-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+		<!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-            <version>4.2.2.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
-            <version>3.0.2.RELEASE</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.security</groupId>-->
+            <!--<artifactId>spring-security-core</artifactId>-->
+            <!--<version>4.2.2.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.thymeleaf.extras</groupId>-->
+            <!--<artifactId>thymeleaf-extras-springsecurity4</artifactId>-->
+            <!--<version>3.0.2.RELEASE</version>-->
+        <!--</dependency>-->
 
 
         <!--<dependency>-->

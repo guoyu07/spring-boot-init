@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: ms-course    # 项目名称尽量用小写
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
+      defaultZone: http://127.0.0.1:8761/eureka/    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true
