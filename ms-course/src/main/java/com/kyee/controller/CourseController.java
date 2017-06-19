@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CourseController {
 
     @RequestMapping(value = "/courses/{courseId}", method = RequestMethod.GET)
-    public Course getCourse(@PathVariable("courseId") int courseId){
+    public Course getCourse(@PathVariable("courseId") long courseId){
         return Course.builder().courseId(courseId).courseName("Effective Java").build();
     }
 }

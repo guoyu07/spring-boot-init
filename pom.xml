@@ -79,11 +79,6 @@
 			<artifactId>spring-boot-starter-redis</artifactId>
 		</dependency>
 
-		<!--<dependency>&lt;!&ndash;mongodb, 它的实现依赖spring-data-mongodb&ndash;&gt;-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-		<!--</dependency>-->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
