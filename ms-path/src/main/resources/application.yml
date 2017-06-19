@@ -1,0 +1,12 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: ms-path
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
+      defaultZone: http://127.0.0.1:8761/eureka/    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true

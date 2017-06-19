@@ -9,6 +9,7 @@
     <modules>
         <module>eurake-server</module>
         <module>ms-course</module>
+        <module>ms-path</module>
     </modules>
     <packaging>pom</packaging>
 
