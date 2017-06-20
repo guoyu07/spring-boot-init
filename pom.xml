@@ -10,6 +10,7 @@
         <module>eurake-server</module>
         <module>ms-course</module>
         <module>ms-path</module>
+        <module>ms-user</module>
     </modules>
     <packaging>pom</packaging>
 
