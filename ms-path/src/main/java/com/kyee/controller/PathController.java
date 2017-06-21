@@ -22,6 +22,6 @@ public class PathController {
 //        return Path.builder().pathId(pathId)
 //                   .courses(Arrays.asList(course_one, course_two))
 //                   .exams(Arrays.asList(exam_one, exam_two)).build();
-        return pathService.getPath(1L);
+        return pathService.getPath(pathId);
     }
 }
