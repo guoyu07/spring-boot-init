@@ -13,8 +13,6 @@ spring:
           password:                                                 # git仓库的密码
 
 eureka:
-  instance:
-    hostname: config-server
   client:
     serverUrl:
 #      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
