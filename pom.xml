@@ -13,6 +13,7 @@
         <module>ms-user</module>
         <module>ms-exam</module>
         <module>ms-gateway</module>
+        <module>config-server</module>
     </modules>
     <packaging>pom</packaging>
 
