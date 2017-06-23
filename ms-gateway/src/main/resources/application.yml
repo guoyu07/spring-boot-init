@@ -1,0 +1,23 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: ms-gateway
+
+eureka:
+  instance:
+    hostname: gateway
+  client:
+    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
+      defaultZone: http://127.0.0.1:8761/eureka/    # 指定注册中心的地址
+
+zuul:
+  ignored-services: ms-exam   # 需要忽视的服务(配置后将不会被路由)
+  routes:
+    course:                   # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
+      path: /course/**        # 想要映射到的路径
+      service-id: ms-course   # Eureka中的serviceId
+    path:
+      path: /path/**
+      service-id: ms-path

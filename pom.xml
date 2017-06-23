@@ -12,6 +12,7 @@
         <module>ms-path</module>
         <module>ms-user</module>
         <module>ms-exam</module>
+        <module>ms-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
