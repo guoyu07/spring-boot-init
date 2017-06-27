@@ -9,6 +9,8 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface QuestionnaireMapper {
 
+    //reference： http://www.mybatis.org/mybatis-3/zh/java-api.html
+
     @Select("SELECT ID, QUESTIONNAIRE_NAME AS QUESTIONNAIRENAME, START_TIME AS STARTTIME, END_TIME AS ENDTIME FROM QUESTIONNAIRE WHERE QUESTIONNAIRE_NAME = #{name}")
     Questionnaire getByName(@Param("name") String name);
 

@@ -1,0 +1,25 @@
+server:
+  port: 8014
+
+spring:
+  application:
+    name: ms-train
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop   #hibernate的配置属性，其主要作用是：自动创建、更新、验证数据库表结构
+                              #create、create-drop、update、validate
+
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
+      defaultZone: http://127.0.0.1:8761/eureka/    # 指定注册中心的地址
