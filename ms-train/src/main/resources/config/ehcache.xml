@@ -1,0 +1,26 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd">
+    <diskStore path="d:\ehcache"></diskStore>
+    <cache name="CustomPageCachingFilter"
+           maxBytesLocalHeap="512M"
+           maxBytesLocalDisk="5G"
+           eternal="false"
+           timeToLiveSeconds="864000"
+           memoryStoreEvictionPolicy="LFU"
+           overflowToDisk="true"
+           diskPersistent="true"
+           clearOnFlush="false">
+        <bootstrapCacheLoaderFactory class="net.sf.ehcache.store.DiskStoreBootstrapCacheLoaderFactory" properties="bootstrapAsynchronously=true"/>
+    </cache>
+
+    <cache name="trains"
+           maxEntriesLocalHeap="0"
+           maxEntriesLocalDisk="0"
+           eternal="false"
+           diskSpoolBufferSizeMB="10"
+           timeToIdleSeconds="14400"
+           timeToLiveSeconds="14400"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+    </cache>
+</ehcache>

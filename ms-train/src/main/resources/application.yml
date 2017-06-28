@@ -1,23 +1,23 @@
 server:
   port: 8014
-
 spring:
   application:
     name: ms-train
-
   datasource:
     url: jdbc:mysql://localhost:3306/test
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-
   jpa:
-    properties:
-      hibernate:
-        hbm2ddl:
-          auto: create-drop   #hibernate的配置属性，其主要作用是：自动创建、更新、验证数据库表结构
-                              #create、create-drop、update、validate
-
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop     #hibernate的配置属性，其主要作用是：自动创建、更新、验证数据库表结构
+                                #create、create-drop、update、validate
+  cache:
+      type: ehcache
+      ehcache:
+        config: config/ehcache.xml
 eureka:
   client:
     serviceUrl:
