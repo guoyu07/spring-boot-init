@@ -16,6 +16,7 @@
         <module>config-server</module>
         <module>ms-questionnaire</module>
         <module>ms-train</module>
+        <module>ms-rabbitmq</module>
     </modules>
     <packaging>pom</packaging>
 
