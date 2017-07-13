@@ -17,6 +17,7 @@
         <module>ms-questionnaire</module>
         <module>ms-train</module>
         <module>ms-rabbitmq</module>
+        <module>ms-search</module>
     </modules>
     <packaging>pom</packaging>
 
