@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Course {
-    private Long courseId;
+    private long courseId;
 
     private String courseName;
     private long startTime;
