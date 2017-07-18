@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8011
 spring:
   application:
     name: ms-course    # 项目名称尽量用小写
