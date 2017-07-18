@@ -28,4 +28,8 @@ ms-questionnaire添加spring-cloud-bus
     2.localhost:8013/profile 查看属性内容
     3.localhost:8030/bus/refresh {post}刷新配置
     4.localhost:8013/profile 查看属性是否变化
+    5.localhost:8030/trace 跟踪详情
+
+参考文档：
+    http://www.itmuch.com/spring-cloud/spring-cloud-bus-auto-refresh-configuration/
 ----------------------------------------------------------------------------

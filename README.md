@@ -8,7 +8,7 @@
 - - -
 
 ### micro-service and port
-<table border="1">
+<table border="0">
     <tr>
         <td>eureka-server</td>
         <td>8761</td>
