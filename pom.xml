@@ -18,7 +18,8 @@
         <module>ms-train</module>
         <module>ms-rabbitmq</module>
         <module>ms-search</module>
-    </modules>
+		<module>ms-tools</module>
+	</modules>
     <packaging>pom</packaging>
 
 	<name>spring-boot-init</name>
